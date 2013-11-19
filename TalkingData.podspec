@@ -1,6 +1,9 @@
 Pod::Spec.new do |s|
-  s.name     = 'GTMBase64'
-  s.version  = '1.0.0'
-  s.source = { :git => 'https://github.com/isaced/GTMBase64.git'}
-  s.source_files = 'GTMBase64/*.{h,m}'
+  s.name     = 'TalkingData'
+  s.version  = '1.0.14'
+  s.source = { :git => 'https://github.com/sunnyxx/TalkingData.git'}
+  s.source_files = './*.h'
+  s.preserve_paths = 'libTalkingData.a'
+  s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'Security', 'AdSupport'
+  s.libraries = 'libz'
 end
