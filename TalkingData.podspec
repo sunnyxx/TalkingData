@@ -5,5 +5,6 @@ Pod::Spec.new do |s|
   s.source_files = './*.h'
   s.preserve_paths = 'libTalkingData.a'
   s.frameworks = 'SystemConfiguration', 'CoreTelephony', 'Security', 'AdSupport'
-  s.libraries = 'libz'
+  s.library = 'TalkingData'
+  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TalkingData"' }
 end
